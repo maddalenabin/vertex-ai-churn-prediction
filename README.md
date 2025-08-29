@@ -12,3 +12,40 @@ This project trains a simple model to predict whether a customer/person falls in
 ---
 
 ## 🗂️ Project Structure
+```bash
+vertex-ai-churn-prediction/
+│── notebooks/              # Jupyter notebooks for exploration
+│── pipeline/               # Pipeline components (Python scripts)
+│   ├── data_preprocessing.py
+│   ├── model_training.py
+│   ├── model_evaluation.py
+│   ├── pipeline.py
+│── deployment/             # Deployment scripts
+│   ├── deploy_model.py
+│   ├── predict.py
+│── data/                   # (Optional small sample dataset for local testing)
+│── README.md               # Project guide
+│── requirements.txt        # Dependencies
+```
+---
+
+## 🛠️ Tech Stack
+- **Google Cloud Platform**  
+  - Vertex AI  
+  - BigQuery (public datasets)  
+  - Cloud Storage  
+- **Python**  
+  - pandas, scikit-learn, joblib  
+  - google-cloud-sdk  
+
+---
+
+## 🚀 Steps to Run
+
+### 1️⃣ Setup GCP
+1. Create a new GCP project (free tier).  
+2. Enable APIs: Vertex AI, BigQuery, Cloud Storage.  
+3. Authenticate:
+   ```bash
+   gcloud init
+   gcloud auth login
