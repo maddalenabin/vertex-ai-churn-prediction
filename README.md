@@ -1,64 +1,3 @@
-# Vertex AI Customer Churn Prediction
-
-🚀 An end-to-end **ML pipeline on Google Cloud Vertex AI**, built to learn the basics of **data engineering + data science workflows in GCP**.  
-This project trains a simple model to predict whether a customer/person falls into a **"high income" category (>100K)** (proxy for churn/no churn).  
-
-## 📌 Objectives
-- Learn the basics of **Google Cloud Vertex AI** (pipelines, model training, deployment).  
-- Practice **Python + ML integration with GCP services**.  
-- Showcase an **end-to-end project** for interviews and portfolio.  
-- Use **only free resources** within Google Cloud’s free tier.  
-
----
-
-## 🗂️ Project Structure
-```bash
-vertex-ai-churn-prediction/
-├── Dockerfile
-├── README.md
-├── requirements.txt
-├── .gitignore
-├── scripts/
-├── data/                  # runtime
-├── models/                # runtime
-├── pipeline/
-│   ├── data_prep.py
-│   ├── train.py
-│   └── register_model_vertex_ai.py
-└── deployment/
-    ├── deploy_cloud_run.sh
-    └── app/
-        └── main.py
-```
----
-
-## 🛠️ Tech Stack
-- **Google Cloud Platform**  
-  - Vertex AI  
-  - BigQuery (public datasets)  
-  - Cloud Storage  
-- **Python**  
-  - pandas, scikit-learn, joblib  
-  - google-cloud-sdk  
-
----
-
-## 🚀 Steps to Run
-
-### 1️⃣ Setup GCP
-1. Create a new GCP project (free tier).  
-2. Enable APIs: Vertex AI, BigQuery, Cloud Storage.  
-3. Authenticate:
-   ```bash
-   gcloud init
-   gcloud auth login
-
-
-
-Perfect 🎉 — having a clear **README.md** will make your GitHub repo shine in interviews. Here’s a draft you can copy into your repo’s `README.md` (or merge into your existing one). It explains the **project goal**, **steps**, and how to reproduce everything on GCP.
-
----
-
 # 📊 Vertex AI Churn Prediction (Census Income Dataset)
 
 This project is an **end-to-end ML pipeline on Google Cloud** using **free-tier resources**.
@@ -70,6 +9,12 @@ It shows how to:
 * Deploy it as a **serverless API on Cloud Run**
 
 👉 Great for learning **Data Scientist / Data Engineer workflows** in GCP.
+
+## 📌 Objectives
+- Learn the basics of **Google Cloud Vertex AI** (pipelines, model training, deployment).  
+- Practice **Python + ML integration with GCP services**.  
+- Showcase an **end-to-end project** for interviews and portfolio.  
+- Use **only free resources** within Google Cloud’s free tier.  
 
 ---
 
